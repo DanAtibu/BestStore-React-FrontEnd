@@ -1,0 +1,53 @@
+.home_card_info {
+  background-color: var(--white);
+  padding: calc(var(--meduim_padding) + 2rem) var(--small_padding);
+  margin-bottom: 1rem;
+  padding: 2rem 1rem;
+  border-radius: 0.4rem;
+  width: 24%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+}
+
+.home_card_info_icon {
+  padding: calc(var(--big_padding) + 0.3rem);
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1.3rem;
+}
+.home_card_info_icon i {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.home_card_info_detail {
+  /* background-color: rgb(91, 165, 73); */
+}
+.home_card_info_detail_title {
+  opacity: 0.5;
+  font-weight: bold;
+}
+.home_card_info_detail_value {
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+
+/* ANNIMATION */
+
+.home_card_info:hover {
+  animation: home_card_info_hover 0.3s ease-in alternate both;
+}
+@keyframes home_card_info_hover {
+  to {
+    transform: scale(0.98);
+  }
+}
+
+/* RESPONSIVE DESIGN FOR IPAD AND TABLET */
+
+@media (min-device-width: 320px) and (max-device-width: 1024px) {
+  .home_card_info {
+    width: 100%;
+  }
+}

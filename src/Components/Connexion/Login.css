@@ -1,0 +1,23 @@
+#user_connexion {
+  height: 100%;
+  padding: 1rem;
+  flex-direction: column;
+}
+#connexion_form input {
+  margin: 1.5rem 1rem 0rem 1rem;
+}
+#connexion_form button {
+  margin-top: 1.5rem;
+  width: 100%;
+  border-radius: 0%;
+}
+
+#connexion_form_option {
+  margin-top: 1rem;
+}
+#connexion_form_option a {
+  margin: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--black);
+}

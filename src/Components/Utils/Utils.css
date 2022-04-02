@@ -1,0 +1,88 @@
+.Loader {
+  height: 100%;
+}
+.Loader div {
+  border: 0.3rem solid var(--grid);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border-top-color: black;
+  animation: Loader_001 2s ease-in-out infinite;
+}
+@keyframes Loader_001 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#personnel_area {
+  width: 600px;
+}
+#personnel_area form {
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: 0.1rem solid var(--grid);
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+#personnel_area form input {
+  width: 25%;
+}
+
+#personnel_area form button {
+  width: 20%;
+}
+
+table {
+  text-align: center;
+  width: 100%;
+}
+
+#NetworkLoader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#NetworkLoader div {
+  border: 0.5rem solid transparent;
+  border-top-color: var(--grid);
+  padding: 1rem;
+  border-radius: 50%;
+  animation: Loader_001 0.7s linear infinite;
+}
+
+#sale-item-list {
+  min-width: 30vw;
+  max-height: 50vh;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+#sale-item-list::-webkit-scrollbar {
+  width: 0.4rem;
+}
+#sale-item-list::-webkit-scrollbar-thumb {
+  background-color: var(--grid);
+}
+
+.sale-item {
+  width: 40rem;
+  border: 0.1rem solid var(--grid);
+  margin-bottom: 1rem;
+}
+.sale-item-head {
+  padding: 0.5rem;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid var(--grid);
+}
+
+.sale-item table {
+  border-collapse: collapse;
+}
+.sale-item table th {
+  padding: 0.3rem;
+}

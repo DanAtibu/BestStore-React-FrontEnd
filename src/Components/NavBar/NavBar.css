@@ -1,0 +1,107 @@
+#navbar {
+  background-color: var(--grid);
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+#navbar i {
+  font-size: 1.1rem;
+}
+#navbar_section_one div,
+#navbar_section_one p {
+  display: inline-block;
+}
+
+#navbar_section_one a {
+  color: inherit;
+}
+
+#navbar_section_one div {
+  margin-right: 2rem;
+  padding: var(--small_padding) var(--meduim_padding);
+}
+#navbar_section_one div:hover {
+  background-color: var(--white);
+  border-radius: 0.3rem;
+  color: var(--blue);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#navbar_section_one p {
+  margin-left: 0.6rem;
+}
+
+#navbar_section_two span {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--green);
+  margin-right: 0.7rem;
+  border-radius: 50%;
+}
+
+.Modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Modal-Content {
+  position: relative;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  width: fit-content;
+}
+.Modal-Content-Head {
+  padding: 0.5rem 0.5rem;
+  background-color: var(--blue);
+  color: var(--white);
+  justify-content: space-between;
+}
+.Modal-Content-Head .fas:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.4);
+  cursor: pointer;
+}
+.Modal-Content-body {
+  padding: 1rem;
+  background-color: var(--white);
+}
+form {
+  flex-direction: column;
+  background-color: var(--white);
+}
+.form-foot {
+  width: 100%;
+  justify-content: flex-end;
+}
+
+form input,
+form select {
+  border: 0.1rem solid var(--grid);
+  width: 40vh;
+  padding: 0.5rem;
+}
+form div {
+  margin: 0.5rem 0rem;
+}
+form label {
+  display: block;
+  font-size: 0.8rem;
+}
+
+form button {
+  border: 0.1rem solid var(--blue);
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+form button:hover {
+  opacity: 0.8;
+}

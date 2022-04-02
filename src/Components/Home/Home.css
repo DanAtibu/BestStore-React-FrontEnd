@@ -1,0 +1,95 @@
+#home_info {
+  margin: 2rem 0rem;
+}
+#home_cards_list {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#home_detail {
+  display: grid;
+  grid-template-columns: 6fr 3fr;
+  grid-template-areas: "home_chart_contenair home_table_contenair";
+  gap: 1rem;
+
+  /* height: calc(100vh - 10px); */
+}
+#home_chart_contenair,
+#home_table_contenair {
+  padding: calc(var(--small_padding) + 2rem);
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#home_contenair_head {
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+#home_contenair_head p {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+#home_contenair_head_form {
+  padding: var(--small_padding);
+  border: 0.1rem solid #ddd;
+  padding: 0.3rem 1rem;
+  /* background-color: red; */
+}
+#home_contenair_head_form select {
+  font-size: 1rem;
+  border: none;
+  width: 10rem;
+}
+option:checked {
+  font-weight: bold;
+}
+option {
+  border: 1px solid #e5e5e5;
+  padding: 1rem;
+  width: inherit;
+}
+#home_contenair_head_form i {
+  margin-right: 1rem;
+  opacity: 0.5;
+}
+#home_chart_contenair {
+  grid-area: home_chart_contenair;
+}
+#home_table_contenair {
+  grid-area: home_table_contenair;
+}
+#home_table_contenair_product_list {
+  padding-right: 1rem;
+  height: 50vh;
+  overflow-y: auto;
+}
+#home_table_contenair_product_list::-webkit-scrollbar {
+  width: 0.4rem;
+}
+#home_table_contenair_product_list::-webkit-scrollbar-thumb {
+  background-color: var(--grid);
+}
+.home_table_contenair_product {
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.home_table_contenair_product div p {
+  margin-right: 2rem;
+  width: 2rem;
+  line-height: 2rem;
+  background-color: var(--grid);
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (min-device-width: 320px) and (max-device-width: 1024px) {
+  #home_cards_list {
+    flex-wrap: wrap;
+  }
+
+  #home_detail {
+    grid-template-areas:
+      "home_chart_contenair home_chart_contenair"
+      "home_table_contenair home_table_contenair";
+  }
+}

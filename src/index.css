@@ -1,13 +1,55 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+:root {
+  --bg: #eee;
+  --txt: white;
+
+  --grid: #eee;
+  --blue: rgb(26, 125, 238);
+  --white: #fff;
+  --green: rgb(77, 207, 99);
+  --red: rgb(235, 65, 59);
+  --yellow: rgb(235, 209, 59);
+
+  --big_padding: 1rem;
+  --meduim_padding: 0.6rem;
+  --small_padding: 0.3rem;
+
+  --optionWidth: 5rem;
+
+  --boxShadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: Poppins;
+  font-family: Montserrat;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  padding: var(--big_padding);
+  background-color: var(--grid);
+  height: 100vh;
+}
+.scroll {
+  overflow-y: scroll;
+}
+.scroll::-webkit-scrollbar {
+  width: 0.3rem;
+  padding: 0.4rem;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
 }
