@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.39d9320f.css",
-    "main.js": "/static/js/main.764f7b31.js",
-    "index.html": "/index.html",
-    "main.39d9320f.css.map": "/static/css/main.39d9320f.css.map",
-    "main.764f7b31.js.map": "/static/js/main.764f7b31.js.map"
+    "main.css": "/BestStore-React-FrontEnd/static/css/main.39d9320f.css",
+    "main.js": "/BestStore-React-FrontEnd/static/js/main.210f8eef.js",
+    "index.html": "/BestStore-React-FrontEnd/index.html",
+    "main.39d9320f.css.map": "/BestStore-React-FrontEnd/static/css/main.39d9320f.css.map",
+    "main.210f8eef.js.map": "/BestStore-React-FrontEnd/static/js/main.210f8eef.js.map"
   },
   "entrypoints": [
     "static/css/main.39d9320f.css",
-    "static/js/main.764f7b31.js"
+    "static/js/main.210f8eef.js"
   ]
 }
